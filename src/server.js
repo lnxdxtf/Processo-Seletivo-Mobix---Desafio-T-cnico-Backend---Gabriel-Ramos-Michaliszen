@@ -1,14 +1,16 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose')
+//require('dotenv').config()
 
-require('dotenv').config()
+//use to run api:  yarn run run
 
-mongoose.connect(process.env.CONNECTION_STRING)
+
+mongoose.connect(process.env['CONNECTION_STRING'])
 
 const app = express();
 
-//yarn run run
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
