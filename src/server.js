@@ -51,7 +51,12 @@ app.get('/', (req, res)=>{
             "/book/cover/base64/:bookName":"retorna capa do livro em base 64",
             "/book/books":"retorna todos os livros",
             "/book/:bookName":"retorna informações de um determinado livro",
-            "/book/cover/up/:isbn":"atualiza informações do book de acordo com o isbn do livro"
+            "/book/cover/up/:isbn":"atualiza informações do book de acordo com o isbn do livro",
+            "/allcharacters/char/new":"adiciona um character qualquer",
+            "/allcharacter/chars":"retorna todos os characters de todos os livros",
+            "/allcharacters/char/:nameChar":"retorna informações de um determinado character",
+            "/allcharacters/char/books/:nameChar":"retorn todos os livros de um determinado character",
+            "/allcharacters/char/up/:_id":"atualiza informações dos characters - rota para tirar informações de url para 'dados mais refinados'"
         }]
     })
 })
